@@ -1,0 +1,4 @@
+Decorators:
+@track: to track the changes from JS to HTML reactively(instantly)
+@api: to pass value from parent component to child component and from child to parent component
+@wire:
