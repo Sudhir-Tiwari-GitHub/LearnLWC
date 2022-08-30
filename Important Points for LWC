@@ -5,5 +5,9 @@ Decorators:
     To use @wire to call an apex method, you must set "cacheable=true".
 To call an apex method, a LWC can:
   a. wire a property
-  b. wire a function
+  b. wire a function: call this inside LWC js: import methodName from '@salesforce/apex/className.methodName';
   c. call a method imperatively
+  lightning-datatable: 
+  1. A table that displays rows and columns of data, this component displays data in tabular format where each column can be displayed based on the data type.
+  2. This component inherits styling/css from "data tables" in the lightning design system.
+  3. lightning-datatable not supported on mobile device.
