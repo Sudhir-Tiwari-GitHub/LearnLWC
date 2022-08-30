@@ -1,3 +1,7 @@
+"ORG Name": https://cts864-dev-ed.lightning.force.com/
+"UserId":  sudhirtiwari1990@gmail.com.learnlwc
+"PW"- Case@#4545
+
 Decorators:
   @track: to track the changes from JS to HTML reactively(instantly)
   @api: to pass value from parent component to child component and from child to parent component
