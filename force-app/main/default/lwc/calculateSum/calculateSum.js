@@ -15,6 +15,7 @@ export default class CalculateSum extends LightningElement {
         })
         .catch(error=>{
             this.errors = error;
+            alert('Please enter first and second numbers');
         });
     }
     handleChange(event){
