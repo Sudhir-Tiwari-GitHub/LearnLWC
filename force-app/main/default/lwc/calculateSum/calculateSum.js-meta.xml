@@ -10,7 +10,7 @@
     <targetConfigs>
         <targetConfig targets="lightning__RecordPage">
             <property name="title" type="String" />
-            <supportedFormFactors>
+            <supportedFormFactors> <!-- Used to Make available for other types like Phone, Tablet etc -->
                 <supportedFormFactor type="Large" />
                 <supportedFormFactor type="Small" />
             </supportedFormFactors>
