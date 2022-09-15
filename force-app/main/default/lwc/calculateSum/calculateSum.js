@@ -1,4 +1,4 @@
-import { LightningElement,track } from 'lwc';
+import { api, LightningElement,track } from 'lwc';
 import getSumResult from '@salesforce/apex/CalculateSum.getSummResult';
 
 export default class CalculateSum extends LightningElement {
@@ -7,6 +7,8 @@ export default class CalculateSum extends LightningElement {
     @track scdNumber;
     @track sum;
     @track errors;
+    @api title;
+    @api greeting;
 
     handleClick(){
         getSumResult({firstNumber:this.fstNumber, secondNumber:this.scdNumber})
