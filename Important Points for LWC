@@ -3,7 +3,7 @@
 "PW"- Case@#4545
 
 YouTube Ref: 1. https://www.youtube.com/playlist?list=PLgIMQe2PKPSJ0hK7DInqhLlw7QK5Pt6fD
-2. Salesforce Techbook
+2. Salesforce Techbook: https://github.com/salesforcetechbook
 3. Salesforce Apex hours
 
 Decorators:
@@ -19,3 +19,9 @@ To call an apex method, a LWC can:
   1. A table that displays rows and columns of data, this component displays data in tabular format where each column can be displayed based on the data type.
   2. This component inherits styling/css from "data tables" in the lightning design system.
   3. lightning-datatable not supported on mobile device.
+
+  * Create a lightning record using "lightning-record-form".
+  * Use "ShowToastEvent" to toast message
+  * Use "NavigationMixin" to navigate to the particular record or anywhere and add extends NavigationMixin(LightningElement) in the class.
+  * Create record using JavaScript API, call createRecord() method and import createRecord() from the lightning/uiRecordAPI module.
+
