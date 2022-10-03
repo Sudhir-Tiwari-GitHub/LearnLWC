@@ -24,4 +24,4 @@ To call an apex method, a LWC can:
   * Use "ShowToastEvent" to toast message
   * Use "NavigationMixin" to navigate to the particular record or anywhere and add extends NavigationMixin(LightningElement) in the class.
   * Create record using JavaScript API, call createRecord() method and import createRecord() from the lightning/uiRecordAPI module.
-
+  *  

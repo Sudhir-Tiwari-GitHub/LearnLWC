@@ -1,0 +1,21 @@
+* Git Installation:
+Install Git
+To check: Open command prompt--> type 'git --version'.
+Create Folder in local machine and go that folder --> right click--> Git Bash Here
+branch details will be at the end
+git clone: to clone the repo in local machine
+git pull: to get all the updated details from repo to local machine
+git status: After any changes in file inside local, then to get differences and list of files changed
+git add .: to stage all the files
+git commit -m 'message while commiting': to commit changes to repo
+git push: To push the changes to git branch
+git switch: to change/switch the branch
+git --help: to get all the required commands
+** Configure Username so as to appear on the commit:
+    git config --global user.name "first last"
+    git config --global user.email "a@b.com"
+To get out of loop or any error, press Ctrl+c
+git branch: to get the current branch in which you are working
+git checkout branchName: will switch to that branch with name as branchName where branchName--> name of the branch to which u want to switch
+git pull origin master: will pull all the changes from master remote repo to local and in the branch u r working in vs code
+git checkout -b branchName: to create new branch where branchName--> Name of the new branch u want to create
