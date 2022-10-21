@@ -1,5 +1,11 @@
 <template>
-    <lightning-card  title="Child Component">
-        <p>{messageInChild}</p>
-    </lightning-card>
+    <lightning-card>
+        <h3 slot="title">
+            <lightning-icon icon-name="utility:connected_apps" size="small"></lightning-icon>
+            Child Component
+        </h3>
+        <p class="slds-p-horizontal_small">
+            {messageInChild}
+        </p>
+        </lightning-card>
 </template>
