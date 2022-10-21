@@ -20,8 +20,17 @@ To call an apex method, a LWC can:
   2. This component inherits styling/css from "data tables" in the lightning design system.
   3. lightning-datatable not supported on mobile device.
 
-  * Create a lightning record using "lightning-record-form".
+To create single record: We can use "lightning-record-form" or using JavaScriptAPI createRecord().
+  * Create a single lightning record using "lightning-record-form".
   * Use "ShowToastEvent" to toast message
   * Use "NavigationMixin" to navigate to the particular record or anywhere and add extends NavigationMixin(LightningElement) in the class.
-  * Create record using JavaScript API, call createRecord() method and import createRecord() from the lightning/uiRecordAPI module.
-  *  
+  * Create single record using JavaScript API, call createRecord() method and import createRecord() from the lightning/uiRecordAPI module.
+  *  Record Creation with Apex from LWC: Used to create single/multiple records at a time
+  
+  * Communication between components(https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.events):
+    A. Components are related and which are under same DOM tree:
+    1. Parent to child: Use public properties of child component and can define this property use @api decorator.
+    2. Child to parent: Use Custom event --> using cunstructor which needs event name and data to be passed(using detail property).
+    B. Components which are not related and which are under different DOM tree, isolatd components:
+    1. Using pub-sub module(https://developer.salesforce.com/docs/component-library/documentation/en/lwc/lwc.events_pubsub)
+    2. Lightning message channel

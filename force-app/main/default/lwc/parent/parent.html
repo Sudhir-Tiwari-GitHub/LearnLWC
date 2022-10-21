@@ -1,0 +1,8 @@
+<template>
+    <lightning-card  title="Parent to Child">
+        <lightning-button label="Send Data to Child" variant="Brand" onclick={sendDataToChild}></lightning-button>
+        <!-- <p class="slds-p-horizontal_small">{parentMessage}</p> -->
+      <!--  <p slot="footer">Card Footer</p> -->
+      <c-child message-in-child={parentMessage}></c-child>
+    </lightning-card>
+</template>
