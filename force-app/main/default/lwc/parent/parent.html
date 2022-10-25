@@ -15,7 +15,9 @@
 </h3>
 <p class="slds-p-horizontal_small">
     <lightning-button label="Send Data to Child" variant="Brand" onclick={sendDataToChild}></lightning-button>    
+    <br/>
+    {messageFromChild}
 </p>
 </lightning-card>
-<c-child message-in-child={parentMessage}></c-child>
+<c-child message-in-child={parentMessage} onchildmessage={handleChildMessage}></c-child>
 </template>

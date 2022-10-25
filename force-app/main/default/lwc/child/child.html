@@ -5,7 +5,8 @@
             Child Component
         </h3>
         <p class="slds-p-horizontal_small">
-            {messageInChild}
+            {messageInChild} <br/>
+            <lightning-button label="Send Event to Parent" variant="brand" onclick={sendMessageToParent}></lightning-button>
         </p>
         </lightning-card>
 </template>
